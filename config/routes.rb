@@ -1,4 +1,6 @@
 Techguru::Application.routes.draw do
+  get "pages/test"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -45,9 +47,8 @@ Techguru::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-
-  match "/home" => redirect('/')
-  root to: 'high_voltage/pages#show', id: "home"
+  match 'test' => 'pages#test'
+  root to: 'pages#home'
 
   # See how all your routes lay out with "rake routes"
 
