@@ -1,7 +1,3 @@
-class PagesController < ApplicationController
-  def home
-  end
-
-  def test
-  end
+class PagesController < HighVoltage::PagesController
+  
 end
