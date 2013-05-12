@@ -6,3 +6,6 @@
 
 @include font-face("proxima-nova", font-files("proximanova-regular-webfont.woff", "proximanova-regular-webfont.ttf"), "proximanova-regular-webfont.eot", normal, normal);
 @include font-face("proxima-nova", font-files("proximanova-bold-webfont.woff", "proximanova-bold-webfont.ttf"), "proximanova-bold-webfont.eot", bold, normal);
+
+@include font-face("museo-slab", font-files("museo_slab_500_regular.woff", "museo_slab_500_regular.ttf"), "museo_slab_500_regular.eot", normal, normal);
+@include font-face("museo-slab", font-files("museo_slab_500_italic.woff", "museo_slab_500_italic.ttf"), "museo_slab_500_italic.eot", normal, italic);
