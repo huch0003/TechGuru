@@ -16,15 +16,12 @@
             <p>Although Singapore is a small “country”, but you will stuck if you are not in the startup community yet. You might need to spend tons of time just trying to find what is going on</p>
             <h3>They consisted of questions like:</h3>
             <ul class="normal">
-              <li>Who is this page for?</li>
-              <li>What problem does this page solve for the user?</li>
-              <li>How do we know they need it?</li>
-              <li>What is the primary action we want users to take on this page?</li>
-              <li>What might prompt a user to take this action?</li>
-              <li>How will we know that this page is doing what we want it to do?</li>
+              <%- (0..5).each do -%>
+              <li><%= Faker::Lorem.sentence %></li>
+              <%- end -%>
             </ul>
-            <p>It was June 19, 2002, and I was sitting in a hotel room in San Francisco when I got that news from my managing director. Modem Media, the company where I had served as Creative Director for the past 4 years, was shutting its Toronto office.</p>
-            <p>It was June 19, 2002, and I was sitting in a hotel room in San Francisco when I got that news from my managing director. Modem Media, the company where I had served as Creative Director for the past 4 years, was shutting its Toronto office.</p>
+            <p><%= Faker::Lorem.paragraph(7) %></p>
+            <p><%= Faker::Lorem.paragraph(10) %></p>
           </div>
         </div>
       </section>

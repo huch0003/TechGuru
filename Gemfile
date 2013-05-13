@@ -10,6 +10,7 @@ gem 'awesome_print', '~> 1.1.0'
 gem 'unicorn', '~> 4.6.2'
 gem 'jquery-rails', '~> 2.2.1'
 gem "high_voltage", '~> 1.2.2'
+gem 'faker', '~> 1.1.2'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -39,7 +40,6 @@ group :development do
   gem 'annotate', '~> 2.5.0'
   gem "letter_opener", '~> 1.1.0'
   gem 'bullet', '~> 4.5.0'
-  gem 'faker', '~> 1.1.2'
 end
 
 group :test do
