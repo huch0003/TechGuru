@@ -1,11 +1,18 @@
-@include font-face("ff-meta-serif-web-pro", font-files("MetaSerifWebPro-Book.woff", "MetaSerifWebPro-Book.ttf"), "MetaSerifWebPro-Book.eot", normal, normal);
-@include font-face("ff-meta-serif-web-pro", font-files("MetaSerifWebPro-BookIta.woff", "MetaSerifWebPro-BookIta.ttf"), "MetaSerifWebPro-BookIta.eot", normal, italic);
-@include font-face("ff-meta-serif-web-pro", font-files("MetaSerifWebPro-Bold.woff", "MetaSerifWebPro-Bold.ttf"), "MetaSerifWebPro-Bold.eot", bold, normal);
-@include font-face("ff-meta-serif-web-pro", font-files("MetaSerifWebPro-BoldIta.woff", "MetaSerifWebPro-BoldIta.ttf"), "MetaSerifWebPro-BoldIta.eot", bold, italic);
+@include font-face("techguru", font-files("techguru.woff", "techguru.ttf"), "techguru.eot", normal, normal);
 
+[data-icon]:before {
+	font-family: 'techguru';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
 
-@include font-face("proxima-nova", font-files("proximanova-regular-webfont.woff", "proximanova-regular-webfont.ttf"), "proximanova-regular-webfont.eot", normal, normal);
-@include font-face("proxima-nova", font-files("proximanova-bold-webfont.woff", "proximanova-bold-webfont.ttf"), "proximanova-bold-webfont.eot", bold, normal);
+.icon span {
+  display:none;
+}
 
-@include font-face("museo-slab", font-files("museo_slab_500_regular.woff", "museo_slab_500_regular.ttf"), "museo_slab_500_regular.eot", normal, normal);
-@include font-face("museo-slab", font-files("museo_slab_500_italic.woff", "museo_slab_500_italic.ttf"), "museo_slab_500_italic.eot", normal, italic);
+@include font-face("nanum-pen-script", font-files("nanumpenscriptregular.woff", "nanumpenscriptregular.ttf"), "nanumpenscriptregular.eot", normal, normal);

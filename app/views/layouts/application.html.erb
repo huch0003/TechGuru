@@ -11,9 +11,12 @@
   	<%= stylesheet_link_tag    "application" %>
   	<%= javascript_include_tag "application", "vendor/custom.modernizr" %>
     <%= csrf_meta_tags %>
+    <script type="text/javascript" src="//use.typekit.net/txh2nls.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   </head>
 
   <body class="<%= "#{controller_name} #{action_name}" %>">
+    <%= render 'layouts/nav' %>
     <%= yield %>
     <%= render "layouts/google_analytics" if Rails.env.production? %>
   </body>

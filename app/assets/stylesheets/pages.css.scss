@@ -1,0 +1,89 @@
+body {
+  text-rendering: optimizelegibility;
+}
+
+.bg-gray-1 {
+  background-color: $bg-gray-1;
+}
+
+.story-container h1, .story-container h2 {
+  text-align: center;
+}
+
+.story-container .intro {
+  text-align: center;
+}
+
+#home .intro {
+  background: image-url("home/bg-contact.jpg") no-repeat center center,image-url("home/hero-bg.jpg") repeat-x center bottom;
+  background-color: $primaryBlue;
+  background-size: cover;
+  z-index: 100;
+  height: 800px;
+  .copy-width {
+    margin-top: 280px;
+    color: #FFF;
+    h1, h2, h3, h4, h5, h6 {
+      color: #FFF;
+    }
+    h4 {
+      font-weight: normal;
+    }
+  }
+}
+
+@media #{$medium} {
+  #home .intro .copy-width {
+    margin-top: 250px;
+  }
+}
+
+@media #{$small} {
+  #home .intro .copy-width {
+    margin-top: 150px;
+  }
+}
+
+.site-width {
+  max-width: emCalc(1000px);
+  width: 90%;
+  margin: 0 auto;
+  @include clearfix;
+}
+
+.copy-width {
+  float: left;
+  width: 81.53333333333335%;
+  margin: 0 .8999999999999999%;
+  margin-left: 9.233333333333334%;
+  clear: left;
+  float: none;
+}
+@media #{$small} {
+  #home .intro {
+    height: 420px;
+  }
+  .copy-width {
+    width: 100%;
+    margin-left: 0;
+  }
+  .site-width {
+    width: 85%;
+  }
+  .story-container .story-content section {
+    padding: 50px 0 0;
+  }
+}
+
+@media #{$medium} {
+  #home .intro {
+    height: 700px;
+  }
+  .copy-width {
+    width: 100%;
+    margin-left: 0;
+  }
+  .site-width {
+    width: 80%;
+  }
+}

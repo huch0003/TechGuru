@@ -17,8 +17,8 @@
 // We use these to control various global styles
 // $body-bg: #fff;
 // $body-font-color: #222;
- $body-font-family: $proximanova;
-// $body-font-weight: normal;
+ $body-font-family: $ffmetaserif;
+ $body-font-weight: 500;
 // $body-font-style: normal;
 
 // We use this to control font-smoothing
@@ -86,20 +86,20 @@
 
 // We use these to control header font styles
  $header-font-family: $proximanova;
-// $header-font-weight: bold;
+ $header-font-weight: 700;
 // $header-font-style: normal;
 // $header-font-color: #222;
-// $header-line-height: 1.4;
+ $header-line-height: 1.1;
 // $header-top-margin: .2em;
 // $header-bottom-margin: .5em;
 // $header-text-rendering: optimizeLegibility;
 
 // We use these to control header font sizes
-// $h1-font-size: emCalc(44px);
+ $h1-font-size: emCalc(79px);
 // $h2-font-size: emCalc(37px);
 // $h3-font-size: emCalc(27px);
 // $h4-font-size: emCalc(23px);
-// $h5-font-size: emCalc(18px);
+ $h5-font-size: emCalc(13px);
 // $h6-font-size: 1em;
 
 // These control how subheaders are styled.
@@ -115,10 +115,10 @@
 
 // We use these to style paragraphs
 // $paragraph-font-family: inherit;
-// $paragraph-font-weight: normal;
-// $paragraph-font-size: 1em;
+ $paragraph-font-weight: 500;
+ $paragraph-font-size: emCalc(26px);
 // $paragraph-line-height: 1.6;
-// $paragraph-margin-bottom: emCalc(20px);
+ $paragraph-margin-bottom: emCalc2(40px, 26px);
 // $paragraph-aside-font-size: emCalc(14px);
 // $paragraph-aside-line-height: 1.35;
 // $paragraph-aside-font-style: italic;
@@ -980,18 +980,18 @@
 
 // Height and margin
 // $topbar-height: 45px;
-// $topbar-margin-bottom: emCalc(30px);
+ $topbar-margin-bottom: emCalc(0px);
 
 // Control Input height for top bar
 // $topbar-input-height: 2.45em;
 
 // Controlling the styles for the title in the top bar
-// $topbar-title-weight: bold;
-// $topbar-title-font-size: emCalc(17px);
+ $topbar-title-weight: 400;
+// $topbar-title-font-size: emCalc(23px);
 
 // Set the link colors and styles for top-level nav
 // $topbar-link-color: #fff;
-// $topbar-link-weight: bold;
+ $topbar-link-weight: 400;
 // $topbar-link-font-size: emCalc(13px);
 
 // Style the top bar dropdown elements
@@ -1013,8 +1013,13 @@
 
 // Transitions and breakpoint styles
 // $topbar-transition-speed: 300ms;
-// $topbar-breakpoint: emCalc(940px); // Change to 9999px for always mobile layout
+ $topbar-breakpoint: emCalc(500px); // Change to 9999px for always mobile layout
 // $topbar-media-query: "only screen and (min-width "#{$topbar-breakpoint}")";
+$small-breakpoint: emCalc(500px);
+$medium-breakpoint: emCalc(1000px);
 
+$small: "only screen and (max-width:"#{$small-breakpoint}")";
+$medium: "only screen and (min-width:"#{$small-breakpoint}") and (max-width:"#{$medium-breakpoint}")";
+$large: "only screen and (min-width:"#{$medium-screen}")";
 
 @import 'foundation';
