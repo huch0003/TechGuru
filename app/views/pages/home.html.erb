@@ -11,18 +11,12 @@
       </section>
       <section class="bg-gray-1">
         <div class="site-width">
-          <div class="copy-width">
-            <h2>Singapore Startup Ecosystem</h2>
-            <p>Although Singapore is a small “country”, but you will stuck if you are not in the startup community yet. You might need to spend tons of time just trying to find what is going on</p>
-            <h3>They consisted of questions like:</h3>
-            <ul class="normal">
-              <%- (0..5).each do -%>
-              <li><%= Faker::Lorem.sentence %></li>
-              <%- end -%>
-            </ul>
-            <p><%= Faker::Lorem.paragraph(7) %></p>
-            <p><%= Faker::Lorem.paragraph(10) %></p>
-          </div>
+          <%= render 'pages/home/about' %>
+        </div>
+      </section>
+      <section class="bg-gray-2">
+        <div class="site-width">
+          <%= render 'pages/home/singapore_eco_system' %>
         </div>
       </section>
     </div>

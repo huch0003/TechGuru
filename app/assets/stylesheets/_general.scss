@@ -1,272 +1,169 @@
+li {
+  list-style: none;
+}
+
+body {
+  font-size: 18px;
+}
+
 h1 {
   font-family: $proximanova;
-  font-size: 79px;
+  font-size: emCalc(38px);
   font-weight: 700;
   letter-spacing: -0.04em;
-  margin-bottom: 75px;
+  margin-bottom: 0.95em;
   line-height: 1.1;
 }
 
 h2 {
   font-family: $proximanova;
-  font-size: 66px;
+  font-size: emCalc(31px);
   font-weight: 700;
   letter-spacing: -0.04em;
-  margin: 100px 0 65px;
+  margin: 1.5152em 0 1em;
   line-height: 1.1;
 }
 
 h3 {
   font-family: $proximanova;
-  font-size: 28px;
+  font-size: emCalc(20px);
   font-weight: 700;
   letter-spacing: -0.05em;
-  margin: 60px 0 40px;
+  margin: 1.5152em 0 1em;
   line-height: 1.1;
 }
 
 h4 {
   font-family: $proximanova;
-  font-size: 24px;
+  font-size: emCalc(16px);
   font-weight: 700;
   letter-spacing: -0.05em;
-  margin: 30px 0 20px;
+  margin: 1.5152em 0 1em;
   line-height: 1.1;
 }
 
 h5 {
   font-family: $ffmetaserif;
-  font-size: 13px;
+  font-size: emCalc(11px);
   letter-spacing: .1em;
-  margin-top: 85px;
+  margin-top: 6.5385em;
   text-transform: uppercase;
   line-height: 1.1;
 }
 
 h6 {
   font-family: $ffmetaserif;
-  font-size: 13px;
+  font-size: emCalc(11px);
   letter-spacing: .2em;
   text-transform: uppercase;
   line-height: 1.1;
 }
 
+blockquote {
+  font-family: $ffmetaserif;
+  font-size: 2.0556em;
+  line-height: 1.2;
+  text-align: center;
+  margin: 1.087em 0 1.6304em;
+  letter-spacing: -0.02em;
+}
+
 ol, ul.checklist {
   border-top: 1px solid #c5c9c9;
-  margin: 50px 0 80px;
+  margin: 2.0833em 0 3.3333em;
 }
+
 ol li, ul.checklist li {
   border-bottom: 1px solid #c5c9c9;
-  padding: 20px 20px 20px 75px;
+  padding: 0.8333em 0.8333em 0.8333em 3.125em;
   font-family: $ffmetaserif;
-  font-size: 24px;
-  line-height: 30px;
+  line-height: 1.25;
   color: #323232;
+  &:before {
+    display: block;
+    margin-left: -3.4583em;
+    padding: 0 1.25em;
+    float: left;
+    color: #03a2ca;
+    font-family: $proximanova;
+    font-weight: 700;
+    font-size: 1em;
+  }
 }
+
 ol {
   counter-reset: ordered-list;
 }
+
 ol li:before {
   content: counter(ordered-list);
   counter-increment: ordered-list;
-  display: block;
-  margin-left: -83px;
-  padding: 0 30px;
-  float: left;
-  color: #03a2ca;
-  font-family: $proximanova;
-  font-weight: 700;
-  font-size: 28px;
 }
+
 ul.checklist li:before {
   content: "O";
-  display: block;
-  margin-left: -83px;
-  padding: 0 30px;
-  float: left;
-  color: #03a2ca;
-  font-family: "techguru";
-  font-size: 23px;
-  line-height: 24px;
+  font-family: $techguru;
 }
-ul.normal, #blog-post ul {
-  margin-bottom: 40px;
+
+ul.normal {
+  margin-bottom: 1.5385em;
+  li {
+    list-style-type: none;
+    background: inline-image("bullet.png") no-repeat left 0.5em;
+    margin-bottom: 0.5769em;
+    padding-left: 1.1538em;
+  }
 }
-ul.normal li, #blog-post ul li {
-  list-style-type: none;
-  background: inline-image("bullet.png") no-repeat left 13px;
-  margin-bottom: 15px;
-  padding-left: 30px;
+
+dl {
+  dd, dt {
+    font-family: $ffmetaserif;
+    line-height: 1.5;
+    margin-bottom: 1.9231em;
+  }
+  dt {
+    font-weight: 700;
+    margin-bottom: 0.1923em;
+  }
 }
-dt {
-  font-family: $ffmetaserif;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 39px;
-  margin-bottom: 5px;
-}
-dd {
-  font-family: $ffmetaserif;
-  font-size: 26px;
-  line-height: 39px;
-  margin-bottom: 50px;
-}
+
 a {
   color: #3ea5ce;
   text-decoration: none;
   @include transition(color .2s);
-}
-a:hover {
-  color: #279;
-}
-blockquote {
-  font-family: $ffmetaserif;
-  font-size: 92px;
-  line-height: 98px;
-  text-align: center;
-  margin: 100px 0 150px;
-  letter-spacing: -0.02em;
-}
-sup {
-  position: relative;
-  font-size: .5em;
-  top: -0.8em;
-}
-.button {
-  font-family: $ffmetaserif;
-  font-size: 17px;
-  font-weight: 400;
-  color: #fff;
-  padding: 15px 21px;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  background: transparent;
-  @include border-radius(9px);
-  text-decoration: none;
-  white-space: nowrap;
-  @include transition(border-color .4s);
   &:hover {
-    color: #fff;
-    border-color: #fff;
+    color: #279;
   }
+}
+
+strong {
+  font-weight: 700;
+}
+
+em {
+  font-style: italic;
 }
 
 @media #{$medium} {
+  body {
+    font-size: 22px;
+  }
   h1 {
-    font-size: 60px;
-    line-height: 66px;
-    margin-bottom: 75px;
+    font-size: 3.4188em;
   }
   h2 {
-    font-size: 50px;
-    line-height: 57px;
-    margin-bottom: 45px;
-  }
-  p {
-    font-size: 23px;
-    line-height: 34px;
-    margin-bottom: 40px;
-  }
-  dt {
-    font-size: 23px;
-    line-height: 34px;
-    margin-bottom: 5px;
-  }
-  dd {
-    font-size: 23px;
-    line-height: 34px;
-    margin-bottom: 40px;
+    font-size: 2.8563em;
   }
   blockquote {
-    font-size: 60px;
-    line-height: 67px;
-    margin: 75px 0 125px;
+    font-size: 2.8em;
   }
 }
 
-@media #{$small} {
-  h1 {
-    font-size: 38px;
-    line-height: 42px;
-    margin-bottom: 48px;
-  }
-  h2 {
-    font-size: 31px;
-    line-height: 35px;
-    margin: 5px 0 30px;
-  }
-  h3 {
-    font-size: 25px;
-    line-height: 28px;
-    margin: 60px 0 25px;
-  }
-  h4 {
-    font-size: 20px;
-    line-height: 24px;
-  }
-  h5 {
-    font-size: 11px;
-    margin-top: 40px;
-  }
-  h6 {
-    font-size: 12px;
-  }
-  p {
-    font-size: 19px;
-    line-height: 29px;
-    margin-bottom: 30px;
-  }
-  dt {
-    font-size: 19px;
-    line-height: 29px;
-    margin-bottom: 5px;
-  }
-  dd {
-    font-size: 19px;
-    line-height: 29px;
-    margin-bottom: 30px;
-  }
-  ul.normal li {
-    font-size: 19px;
-    line-height: 29px;
-  }
-  ul.checklist {
-    margin-bottom: 65px;
-  }
-  ul.checklist li {
-    font-size: 20px;
-    line-height: 26px;
-    padding: 10px 10px 10px 42px;
-  }
-  ul.checklist li:before {
-    font-size: 15px;
-    margin-left: -42px;
-    padding: 0 10px;
-  }
-  ol.checklist {
-    margin-bottom: 65px;
-  }
-  ol.checklist li {
-    font-size: 20px;
-    line-height: 26px;
-    padding: 10px 10px 10px 65px;
-  }
-  ol.checklist li:before {
-    font-size: 20px;
-    margin-left: -56px;
-    padding: 0 10px;
+@media #{$large} {
+  body {
+    font-size: 26px;
   }
   blockquote {
-    font-size: 37px;
-    line-height: 42px;
-    margin: 50px 0 75px;
-  }
-  .button {
-    font-size: 15px;
-    color: #fff;
-    padding: 14px 17px;
-    @include border-radius(7px);
-  }
-  .dl-button span {
-    margin: -2px 5px -4px -5px;
+    font-size: 3em;
   }
 }

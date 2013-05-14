@@ -11,6 +11,8 @@ gem 'unicorn', '~> 4.6.2'
 gem 'jquery-rails', '~> 2.2.1'
 gem "high_voltage", '~> 1.2.2'
 gem 'faker', '~> 1.1.2'
+gem 'redcarpet'
+# gem 'markdown-rails'
 
 # Gems used only for assets and not required
 # in production environments by default.

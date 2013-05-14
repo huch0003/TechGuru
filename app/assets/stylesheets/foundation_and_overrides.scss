@@ -95,11 +95,11 @@
 // $header-text-rendering: optimizeLegibility;
 
 // We use these to control header font sizes
- $h1-font-size: emCalc(79px);
+// $h1-font-size: emCalc(79px);
 // $h2-font-size: emCalc(37px);
 // $h3-font-size: emCalc(27px);
 // $h4-font-size: emCalc(23px);
- $h5-font-size: emCalc(13px);
+// $h5-font-size: emCalc(13px);
 // $h6-font-size: 1em;
 
 // These control how subheaders are styled.
@@ -116,9 +116,9 @@
 // We use these to style paragraphs
 // $paragraph-font-family: inherit;
  $paragraph-font-weight: 500;
- $paragraph-font-size: emCalc(26px);
+// $paragraph-font-size: emCalc(18px);
 // $paragraph-line-height: 1.6;
- $paragraph-margin-bottom: emCalc2(40px, 26px);
+ $paragraph-margin-bottom: 1.5385em;
 // $paragraph-aside-font-size: emCalc(14px);
 // $paragraph-aside-line-height: 1.35;
 // $paragraph-aside-font-style: italic;
@@ -149,7 +149,9 @@
 // We use these to style blockquotes
 // $blockquote-font-color: lighten($header-font-color, 30%);
 // $blockquote-padding: emCalc(9px) emCalc(20px) 0 emCalc(19px);
+ $blockquote-padding: 0;
 // $blockquote-border: 1px solid #ddd;
+ $blockquote-border: 0;
 // $blockquote-cite-font-size: emCalc(13px);
 // $blockquote-cite-font-color: lighten($header-font-color, 20%);
 // $blockquote-cite-link-color: $blockquote-cite-font-color;
@@ -1015,11 +1017,11 @@
 // $topbar-transition-speed: 300ms;
  $topbar-breakpoint: emCalc(500px); // Change to 9999px for always mobile layout
 // $topbar-media-query: "only screen and (min-width "#{$topbar-breakpoint}")";
-$small-breakpoint: emCalc(500px);
+$small-breakpoint: emCalc(600px);
 $medium-breakpoint: emCalc(1000px);
 
 $small: "only screen and (max-width:"#{$small-breakpoint}")";
-$medium: "only screen and (min-width:"#{$small-breakpoint}") and (max-width:"#{$medium-breakpoint}")";
-$large: "only screen and (min-width:"#{$medium-screen}")";
+$medium: "only screen and (min-width:"#{$small-breakpoint}")";
+$large: "only screen and (min-width:"#{$medium-breakpoint}")";
 
 @import 'foundation';
