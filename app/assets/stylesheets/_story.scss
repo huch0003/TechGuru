@@ -18,13 +18,10 @@
     margin: 1.3466em 0 0.8753em;
   }
   span.underline {
-    background: inline-image("ui/text-underline-1.png") no-repeat left 1em;
-//    background-size: 3.8667em 0.13em;
-    background-size: 236%;
+    background: inline-image("ui/text-underline-1.png") no-repeat left 1.11em;
+    background-size: 5.5555em 0.1944em;
     &.alt {
       background: inline-image("ui/text-underline-2.png") no-repeat left 1.11em;
-//      background-size: 3.8667em 0.13em;
-      background-size: 236%;
     }
   }
   span.scratched {
@@ -157,17 +154,6 @@
   .story-container .icon.tglogo {
     font-size: 17px;
   }
-  .story-container .story-content {
-    margin: 0 auto;
-  }
-//  .story-container .story-content section {
-//    padding-bottom: 50px;
-//  }
-  //.story-container span.underline, .story-container span.underline.alt {
-  //    padding-bottom: 0.1em;
-  //    background-size: 6.6667em 0.1em;
-  //    background-position: left 1.1em;
-  //  }
   .story-container span.scratched {
     background-size: 340px 47px;
     background-position: left 28px;
@@ -181,9 +167,6 @@
   }
 }
 @media #{$small} {
-//  .story-container section h2 {
-//    margin: 5px 0 30px;
-//  }
   .story-container .icon.tglogo {
     font-size: 19px;
     margin: 10px 0 10px;
@@ -191,17 +174,9 @@
   .story-container .intro .logo {
     margin-bottom: 55px;
   }
-  //.story-container span.underline, .story-container span.underline.alt {
-  //    padding-bottom: 4px;
-  //    background-size: 350px 4px;
-  //    background-position: left 42px;
-  //  }
   .story-container span.scratched {
     background-size: 200px 44px;
   }
-//  .story-container .story-content section {
-//    padding: 50px 0 0;
-//  }
   .story-container .what-we-learned blockquote {
     font-size: 36px;
     line-height: 42px;
