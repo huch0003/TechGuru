@@ -2,38 +2,47 @@
   position: relative;
   z-index: 200;
   height: 100%;
-  margin-bottom: 450px;
+  margin-bottom: 17.3em;
+  a {
+    color: inherit;
+    text-decoration: underline;
+    font-weight: 700;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  h1, h2 {
+    text-align: center;
+  }
+  section h2 {
+    margin: 1.3466em 0 0.8753em;
+  }
+  span.underline {
+    background: inline-image("ui/text-underline-1.png") no-repeat left 1em;
+//    background-size: 3.8667em 0.13em;
+    background-size: 236%;
+    &.alt {
+      background: inline-image("ui/text-underline-2.png") no-repeat left 1.11em;
+//      background-size: 3.8667em 0.13em;
+      background-size: 236%;
+    }
+  }
+  span.scratched {
+    background: inline-image("ui/text-scratchout-1.png") no-repeat left 1.11em;
+    padding: 0 0 0.2308em 0.2308em;
+    background-size: 236%;
+  }
+  .callout {
+    font-family: $nanumpenscript;
+  }
+  .story-content {
+    margin: 0 auto;
+    section {
+      padding: 1.9231em 0 1.9231em;
+    }
+  }
 }
-.story-container a {
-  color: inherit;
-  text-decoration: underline;
-  font-weight: 700;
-}
-.story-container a:hover {
-  text-decoration: none;
-}
-.story-container h1, .story-container h2 {
-  text-align: center;
-}
-.story-container section h2 {
-  margin: 100px 0 65px;
-}
-.story-container span.underline {
-  background: inline-image("ui/text-underline-1.png") no-repeat left 1.11em;
-  background-size: 3.8667em 0.13em;
-}
-.story-container span.underline.alt {
-  background: inline-image("ui/text-underline-2.png") no-repeat left 1.11em;
-  background-size: 3.8667em 0.13em;
-}
-.story-container span.scratched {
-  background: inline-image("ui/text-scratchout-1.png") no-repeat left 1.11em;
-  padding: 0 0 6px 6px;
-  background-size: 236%;
-}
-.story-container .callout {
-  font-family: $nanumpenscript;
-}
+
 .story-container .icon.tglogo {
   display: block;
   text-align: center;
@@ -75,12 +84,9 @@
   @include opacity(100);
   @include animation(animation);
 }
-.story-container .story-content {
-  margin: 0 auto;
-}
-.story-container .story-content section {
-  padding-bottom: 50px;
-}
+//.story-container .story-content section {
+//  padding-bottom: 50px;
+//}
 .story-container .intro {
   text-align: center;
 }
@@ -154,9 +160,9 @@
   .story-container .story-content {
     margin: 0 auto;
   }
-  .story-container .story-content section {
-    padding-bottom: 50px;
-  }
+//  .story-container .story-content section {
+//    padding-bottom: 50px;
+//  }
   //.story-container span.underline, .story-container span.underline.alt {
   //    padding-bottom: 0.1em;
   //    background-size: 6.6667em 0.1em;
@@ -175,9 +181,9 @@
   }
 }
 @media #{$small} {
-  .story-container section h2 {
-    margin: 5px 0 30px;
-  }
+//  .story-container section h2 {
+//    margin: 5px 0 30px;
+//  }
   .story-container .icon.tglogo {
     font-size: 19px;
     margin: 10px 0 10px;
@@ -193,9 +199,9 @@
   .story-container span.scratched {
     background-size: 200px 44px;
   }
-  .story-container .story-content section {
-    padding: 50px 0 0;
-  }
+//  .story-container .story-content section {
+//    padding: 50px 0 0;
+//  }
   .story-container .what-we-learned blockquote {
     font-size: 36px;
     line-height: 42px;

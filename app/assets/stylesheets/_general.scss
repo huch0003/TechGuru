@@ -71,23 +71,22 @@ blockquote {
 ol, ul.checklist {
   border-top: 1px solid #c5c9c9;
   margin: 2.0833em 0 3.3333em;
-}
-
-ol li, ul.checklist li {
-  border-bottom: 1px solid #c5c9c9;
-  padding: 0.8333em 0.8333em 0.8333em 3.125em;
-  font-family: $ffmetaserif;
-  line-height: 1.25;
-  color: #323232;
-  &:before {
-    display: block;
-    margin-left: -3.4583em;
-    padding: 0 1.25em;
-    float: left;
-    color: #03a2ca;
-    font-family: $proximanova;
-    font-weight: 700;
-    font-size: 1em;
+  li {
+    border-bottom: 1px solid #c5c9c9;
+    padding: 0.8333em 0.3em 0.8333em 2.8em;
+    font-family: $ffmetaserif;
+    line-height: 1.25;
+    color: #323232;
+    &:before {
+      display: block;
+      margin-left: -3.4583em;
+      padding: 0 1.25em;
+      float: left;
+      color: #03a2ca;
+      font-family: $proximanova;
+      font-weight: 700;
+      font-size: 1em;
+    }
   }
 }
 
@@ -103,15 +102,16 @@ ol li:before {
 ul.checklist li:before {
   content: "O";
   font-family: $techguru;
+  font-size: 0.9em;
 }
 
 ul.normal {
-  margin-bottom: 1.5385em;
+  margin-bottom: 2.2222em;
   li {
     list-style-type: none;
-    background: inline-image("bullet.png") no-repeat left 0.5em;
-    margin-bottom: 0.5769em;
-    padding-left: 1.1538em;
+    background: inline-image("bullet.png") no-repeat 0.5em 0.6em;
+    margin-bottom: 0.8333em;
+    padding-left: 1.6667em;
   }
 }
 
@@ -156,6 +156,17 @@ em {
   }
   blockquote {
     font-size: 2.8em;
+  }
+  ol, ul.checklist {
+    li {
+      padding: 0.8333em 0.8333em 0.8333em 3.125em;
+//      padding: 0.8333em 0 0.8333em 2.125em;
+      &:before {
+        margin-left: -3.4583em;
+//        margin-left: -2em;
+        padding: 0 1.25em;
+      }
+    }
   }
 }
 
