@@ -35,14 +35,14 @@
   .story-content {
     margin: 0 auto;
     section {
-      padding: 1.9231em 0 1.9231em;
+      padding: 0 0 1.9231em;
     }
   }
   .icon.tglogo {
     display: block;
     text-align: center;
-    font-size: 1.3462em;
-    margin: 3.8462em 0 -3.0769em;
+    font-size: 1.9em;
+    margin: 1.8182em 0 -1.2em;
   }
   .icon.interaction {
     display: block;
@@ -92,9 +92,9 @@
   }
   .what-we-learned {
     background: #eee;
-    .tglogo {
+    .icon.tglogo {
       color: #333;
-      margin-bottom: 0.7692em;
+      margin-bottom: -0.8em;
     }
     h3 {
       display: block;
@@ -148,49 +148,19 @@
   .story-container {
     .what-we-learned {
       h3 {
-        margin: 0.1923em 0 -0.6410em;
+        margin: 0.4545em 0 -1.5152em;
+      }
+      .icon.tglogo {
+        margin-bottom: 15px;
       }
       blockquote {
         margin: 1.8293em 0 0.65em;
         line-height: 1.1;
       }
     }
+    .icon.tglogo {
+      font-size: 2.1154em;
+      margin: 1.8182em 0 -1.6364em;
+    }
   }
 }
-
-//@media #{$medium} {
-//  .story-container .icon.tglogo {
-//    font-size: 17px;
-//  }
-//  .story-container span.scratched {
-//    background-size: 340px 47px;
-//    background-position: left 28px;
-//  }
-//  .story-container .what-we-learned blockquote {
-//    font-size: 72px;
-//    line-height: 82px;
-//  }
-//  .story-container .what-we-learned h3 {
-//    margin-bottom: -40px;
-//  }
-//}
-//@media #{$small} {
-//  .story-container .icon.tglogo {
-//    font-size: 19px;
-//    margin: 10px 0 10px;
-//  }
-//  .story-container .intro .logo {
-//    margin-bottom: 55px;
-//  }
-//  .story-container span.scratched {
-//    background-size: 200px 44px;
-//  }
-//  .story-container .what-we-learned blockquote {
-//    font-size: 36px;
-//    line-height: 42px;
-//    margin: 50px 0;
-//  }
-//  .story-container .what-we-learned h3 {
-//    margin-bottom: 10px;
-//  }
-//}
