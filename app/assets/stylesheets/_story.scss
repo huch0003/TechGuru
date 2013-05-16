@@ -38,151 +38,159 @@
       padding: 1.9231em 0 1.9231em;
     }
   }
+  .icon.tglogo {
+    display: block;
+    text-align: center;
+    font-size: 1.3462em;
+    margin: 3.8462em 0 -3.0769em;
+  }
+  .icon.interaction {
+    display: block;
+    text-align: center;
+    font-size: 1.1538em;
+    margin: 1.5385em 0 1.5385em;
+  }
+  .interaction-info {
+    font-family: $ffmetaserif;
+    font-size: 0.6154em;
+    font-style: italic;
+  }
+  .interaction-wrap {
+    text-align: center;
+    .icon.interaction, .interaction-info {
+      @include inline-block;
+      vertical-align: middle;
+      @include transition(opacity .3s);
+    }
+    .icon.interaction {
+      margin: 0 0.3846em;
+      @include opacity(70);
+      @include animation(pulser 3s ease infinite);
+      &:hover {
+        @include opacity(100);
+        cursor: pointer;
+      }
+    }
+    .interaction-info {
+      @include opacity(0);
+    }
+    &.hover {
+      .icon.interaction, .interaction-info {
+        .icon.interaction, .interaction-info {
+        }
+      }
+    }
+  }
+  .intro {
+    text-align: center;
+    p {
+      text-align: left;
+    }
+    .logo {
+      margin: 4px 0 1.9231em;
+    }
+  }
+  .what-we-learned {
+    background: #eee;
+    .tglogo {
+      color: #333;
+      margin-bottom: 0.7692em;
+    }
+    h3 {
+      display: block;
+      text-align: center;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    p {
+      color: #404040;
+    }
+    blockquote {
+      color: #888;
+      margin: 1.3514em 0;
+    }
+    .employee {
+      text-align: center;
+      margin: -1.11em 0 1.94444em;
+      span {
+        display: block;
+        font-family: $proximanova;
+        font-size: 13px;
+        color: #b3b3b1;
+        margin-top: 5px;
+      }
+    }
+  }
+  .sharing-tools {
+    text-align: center;
+    padding-top: 1.9231em;
+    .network {
+      @include inline-block;
+      width: 100px;
+      height: 20px;
+      @include transition(background-color .5s);
+      cursor: pointer;
+    }
+    .fb-like {
+      float: left;
+    }
+    .cta {
+      font-family: $proximanova;
+      font-size: 18px;
+      color: #666;
+      display: block;
+      margin: 30px 0;
+    }
+  }
 }
 
-.story-container .icon.tglogo {
-  display: block;
-  text-align: center;
-  font-size: 35px;
-  margin: 100px 0 -80px;
-}
-.story-container .icon.interaction {
-  display: block;
-  text-align: center;
-  font-size: 30px;
-  margin: 40px 0 40px;
-}
-.story-container .interaction-info {
-  font-family: $ffmetaserif;
-  font-size: 16px;
-  font-style: italic;
-}
-.story-container .interaction-wrap {
-  text-align: center;
-}
-.story-container .interaction-wrap .icon.interaction, .story-container .interaction-wrap .interaction-info {
-  @include inline-block;
-  vertical-align: middle;
-  @include transition(opacity .3s);
-}
-.story-container .interaction-wrap .icon.interaction {
-  margin: 0 10px;
-  @include opacity(70);
-  @include animation(pulser 3s ease infinite);
-}
-.story-container .interaction-wrap .icon.interaction:hover {
-  @include opacity(100);
-  cursor: pointer;
-}
-.story-container .interaction-wrap .interaction-info {
-  @include opacity(0);
-}
-.story-container .interaction-wrap.hover .interaction-info, .story-container .interaction-wrap.hover .icon.interaction {
-  @include opacity(100);
-  @include animation(animation);
-}
-//.story-container .story-content section {
-//  padding-bottom: 50px;
-//}
-.story-container .intro {
-  text-align: center;
-}
-.story-container .intro p {
-  text-align: left;
-}
-.story-container .intro .logo {
-  margin: 4px 0 50px;
-}
-.story-container .what-we-learned {
-  background: #eee;
-}
-.story-container .what-we-learned .tglogo {
-  color: #333;
-  margin-bottom: 20px;
-}
-.story-container .what-we-learned h3 {
-  display: block;
-  text-align: center;
-  color: #333;
-  margin: 15px 0 -50px;
-}
-.story-container .what-we-learned p {
-  color: #404040;
-}
-.story-container .what-we-learned blockquote {
-  font-size: 82px;
-  line-height: 88px;
-  color: #888;
-  margin: 150px 0 50px;
-}
-.story-container .what-we-learned .employee {
-  text-align: center;
-  margin: -20px 0 35px;
-}
-.story-container .what-we-learned .employee span {
-  display: block;
-  font-family: $proximanova;
-  font-size: 13px;
-  color: #b3b3b1;
-  margin-top: 5px;
-}
-.story-container .what-we-learned .employee strong {
-  font-weight: 700;
-}
-.story-container .sharing-tools {
-  text-align: center;
-  padding-top: 50px;
-}
-.story-container .sharing-tools .network {
-  @include inline-block;
-  width: 100px;
-  height: 20px;
-  @include transition(background-color .5s);
-  cursor: pointer;
-}
-.story-container .sharing-tools div.fb-like {
-  float: left;
-}
-.story-container .sharing-tools .cta {
-  font-family: $proximanova;
-  font-size: 18px;
-  color: #666;
-  display: block;
-  margin: 30px 0;
-}
 @media #{$medium} {
-  .story-container .icon.tglogo {
-    font-size: 17px;
-  }
-  .story-container span.scratched {
-    background-size: 340px 47px;
-    background-position: left 28px;
-  }
-  .story-container .what-we-learned blockquote {
-    font-size: 72px;
-    line-height: 82px;
-  }
-  .story-container .what-we-learned h3 {
-    margin-bottom: -40px;
+  .story-container {
+    .what-we-learned {
+      h3 {
+        margin: 0.1923em 0 -0.6410em;
+      }
+      blockquote {
+        margin: 1.8293em 0 0.65em;
+        line-height: 1.1;
+      }
+    }
   }
 }
-@media #{$small} {
-  .story-container .icon.tglogo {
-    font-size: 19px;
-    margin: 10px 0 10px;
-  }
-  .story-container .intro .logo {
-    margin-bottom: 55px;
-  }
-  .story-container span.scratched {
-    background-size: 200px 44px;
-  }
-  .story-container .what-we-learned blockquote {
-    font-size: 36px;
-    line-height: 42px;
-    margin: 50px 0;
-  }
-  .story-container .what-we-learned h3 {
-    margin-bottom: 10px;
-  }
-}
+
+//@media #{$medium} {
+//  .story-container .icon.tglogo {
+//    font-size: 17px;
+//  }
+//  .story-container span.scratched {
+//    background-size: 340px 47px;
+//    background-position: left 28px;
+//  }
+//  .story-container .what-we-learned blockquote {
+//    font-size: 72px;
+//    line-height: 82px;
+//  }
+//  .story-container .what-we-learned h3 {
+//    margin-bottom: -40px;
+//  }
+//}
+//@media #{$small} {
+//  .story-container .icon.tglogo {
+//    font-size: 19px;
+//    margin: 10px 0 10px;
+//  }
+//  .story-container .intro .logo {
+//    margin-bottom: 55px;
+//  }
+//  .story-container span.scratched {
+//    background-size: 200px 44px;
+//  }
+//  .story-container .what-we-learned blockquote {
+//    font-size: 36px;
+//    line-height: 42px;
+//    margin: 50px 0;
+//  }
+//  .story-container .what-we-learned h3 {
+//    margin-bottom: 10px;
+//  }
+//}
